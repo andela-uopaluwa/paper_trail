@@ -1,0 +1,30 @@
+{
+  "name": "paper_trail",
+  "version": "1.0.0",
+  "description": "Simple expense/income tracker",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./app.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-uopaluwa/paper_trail.git"
+  },
+  "author": "U D Opaluwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andela-uopaluwa/paper_trail/issues"
+  },
+  "homepage": "https://github.com/andela-uopaluwa/paper_trail#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.9",
+    "pug": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0"
+  }
+}
