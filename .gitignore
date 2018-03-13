@@ -60,3 +60,6 @@ typings/
 # package.json lock file
 package-lock.json
 
+#eslint config
+.eslintrc.yml
+
