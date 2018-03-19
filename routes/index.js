@@ -14,6 +14,7 @@ router.delete('/api/expense/:id', expenseController.deleteExpense);
 //Income
 router.post('/api/income', incomeController.addIncome);
 router.get('/income', incomeController.getIncome);
+router.delete('/income/:id', incomeController.deleteIncome);
 
 
 module.exports = router;

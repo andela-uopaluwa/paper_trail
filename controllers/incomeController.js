@@ -10,3 +10,9 @@ exports.getIncome = async (req, res) => {
   const income = await Income.find();
   res.json(income);
 };
+
+exports.deleteIncome = async (req, res) => {
+  // TODO: only initiator can delete income
+  const income = await Income.findByIdAndRemove(req.params.id);
+  res.json({ msg: 'Succesfully deleted', deleted: income });
+};
