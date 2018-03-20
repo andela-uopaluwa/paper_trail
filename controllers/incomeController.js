@@ -16,3 +16,11 @@ exports.deleteIncome = async (req, res) => {
   const income = await Income.findByIdAndRemove(req.params.id);
   res.json({ msg: 'Succesfully deleted', deleted: income });
 };
+
+exports.updateIncome = async (req, res) => {
+  const income = await( Income.findOneAndUpdate({_id: req.params.id}, req.body, {
+    new: true,
+    runValidators: true
+  })).exec();
+  res.json(income);
+};
