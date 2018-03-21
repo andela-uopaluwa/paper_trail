@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Expense = require('../models/Expense');
 
 exports.home = (req, res) => {
-  res.send('WHEELS UP 🔥 🔥 🔥!!!');
+  res.render('home');
 };
 
 exports.createExpense = async (req, res) => {
