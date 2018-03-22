@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Expense = require('../models/Expense');
 
 exports.home = (req, res) => {
-  res.render('home');
+  res.render('home', {title: "PaperTrail"});
 };
 
 exports.createExpense = async (req, res) => {
