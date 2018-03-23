@@ -2,10 +2,14 @@ const express = require('express');
 const router = express.Router();
 const expenseController = require('../controllers/expenseController');
 const incomeController = require('../controllers/incomeController');
+const loginController = require('../controllers/loginController');
 
 //Expense
 
+
 router.get('/', expenseController.home);
+router.get('/login', loginController.showLogin);
+
 router.get('/expenses', expenseController.getExpenses);
 router.post('/api/expense', expenseController.createExpense);
 router.post('/api/expense/:id', expenseController.updateExpense);
