@@ -6,7 +6,8 @@ body {
 
 #container {
   height: 100vh;
-  display: flex; }
+  display: flex;
+  color: #fff; }
 
 #container-left {
   display: flex;
