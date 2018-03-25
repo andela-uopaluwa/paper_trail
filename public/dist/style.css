@@ -19,7 +19,20 @@ body {
     width: 66%;
     margin-top: auto;
     margin-bottom: auto;
-    height: 75%; }
+    height: 85%; }
+  #container-left .left-text {
+    margin-left: 10%;
+    margin-right: 20%; }
+  #container-left .caption {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif; }
+    #container-left .caption h2 {
+      margin-bottom: 0px;
+      margin-top: 35%;
+      font-size: 2em; }
+    #container-left .caption p {
+      margin-top: 5px; }
 
 #container-right {
   display: flex;
@@ -30,4 +43,8 @@ body {
     width: 80%;
     margin-top: auto;
     margin-bottom: auto;
-    height: 75%; }
+    height: 85%; }
+
+.logo {
+  font-family: 'Sirin Stencil', cursive;
+  margin-top: 20%; }
