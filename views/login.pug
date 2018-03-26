@@ -16,4 +16,15 @@ html
               p Take advantage of PaperTrails' clear visualisations and identify areas of spending where savings can be made.
       #container-right
         .right
+          .right-text
+            p Get started
+            form(method="POST" action="/api/login")
+              input(type="text" required placeholder="Firstname")
+              br
+              input(type="text" required placeholder="Email Address")
+              br
+              input(type="password" placeholder="Password" required)
+              br
+              button(type="submit") GO
+            p Already have an account? #[br] Click #[u here] to login.
           
