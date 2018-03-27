@@ -43,6 +43,30 @@
     margin-top: auto;
     margin-bottom: auto;
     height: 85%;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .right-text h3 {
+      font-size: 1.5em;
+    }
+
+    .right-text input {
+      border: none;
+      background-color: transparent;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 10px;
+    }
+
+    .submit {
+      margin-top: 10px;
+      padding: 10px;
+      border: none;
+      color: #fff;
+      background-color: #001;
+    }
   }
 }
 .logo {

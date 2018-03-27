@@ -43,7 +43,26 @@ body {
     width: 80%;
     margin-top: auto;
     margin-bottom: auto;
-    height: 85%; }
+    height: 85%;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #container-right .right .right-text h3 {
+      font-size: 1.5em; }
+    #container-right .right .right-text input {
+      border: none;
+      background-color: transparent;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 10px; }
+    #container-right .right .submit {
+      margin-top: 10px;
+      padding: 10px;
+      border: none;
+      color: #fff;
+      background-color: #001; }
 
 .logo {
   font-family: 'Sirin Stencil', cursive;
