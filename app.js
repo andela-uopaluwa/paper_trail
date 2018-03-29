@@ -2,8 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 const bodyParser = require('body-parser');
-const routes = require('./routes/index');
 require('dotenv').config({ path: 'variables.env' });
+// import models
+require('./models/User');
+require('./models/Expense');
+require('./models/Income');
+require('./handlers/passport');
+
+const routes = require('./routes/index');
 
 const app = express();
 
@@ -27,9 +33,6 @@ mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
 mongoose.connection.on('error', (err) => {
   console.error(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${err.message}`);
 });
-
-// import models
-require('./models/Expense');
 
 app.listen(app.get('port'), () => {
   console.log(`Express running → PORT ${app.get('port')}`);
